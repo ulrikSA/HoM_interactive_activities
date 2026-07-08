@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: oklch(52% 0.09 185); }
+    a:hover { color: oklch(44% 0.09 185); }
+    @keyframes fadeUp {
+      0% { transform: translateY(6px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</helmet>
+
+<div style="min-height:100vh; background:oklch(97% 0.014 75); font-family:'Nunito', sans-serif; color:oklch(24% 0.02 60); padding:28px 20px 60px; display:flex; flex-direction:column; align-items:center; gap:28px;">
+
+  <div style="width:100%; max-width:1080px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+    <div style="font-family:'Baloo 2', sans-serif; font-weight:700; font-size:22px; color:oklch(30% 0.03 60);">House of Math <span style="font-weight:500; color:oklch(48% 0.02 60); font-size:16px; font-family:'Nunito',sans-serif;">· Function Writing</span></div>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="Activity1.dc.html" style="width:34px; height:34px; border-radius:50%; background:oklch(90% 0.02 70); color:oklch(55% 0.02 60); display:flex; align-items:center; justify-content:center; font-weight:800; font-family:'Baloo 2',sans-serif; font-size:15px; text-decoration:none;">1</a>
+      <div style="width:34px; height:6px; border-radius:3px; background:oklch(88% 0.02 70);"></div>
+      <a href="Activity2.dc.html" style="width:34px; height:34px; border-radius:50%; background:oklch(90% 0.02 70); color:oklch(55% 0.02 60); display:flex; align-items:center; justify-content:center; font-weight:800; font-family:'Baloo 2',sans-serif; font-size:15px; text-decoration:none;">2</a>
+      <div style="width:34px; height:6px; border-radius:3px; background:oklch(88% 0.02 70);"></div>
+      <div style="width:34px; height:34px; border-radius:50%; background:oklch(52% 0.09 185); color:white; display:flex; align-items:center; justify-content:center; font-weight:800; font-family:'Baloo 2',sans-serif; font-size:15px;">3</div>
+      <span style="font-size:14px; color:oklch(50% 0.02 60); margin-left:6px;">Activity 3 of 3</span>
+    </div>
+  </div>
+
+  <div style="width:100%; max-width:1080px; text-align:left;">
+    <h1 style="font-family:'Baloo 2', sans-serif; font-size:28px; margin:0 0 4px; color:oklch(28% 0.03 60);">Write it from scratch</h1>
+    <p style="margin:0; font-size:16px; color:oklch(48% 0.02 60); max-width:640px;">No template this time. Look at the curve, decide on direction, vertex, and width, then type the full function.</p>
+  </div>
+
+  <div style="width:100%; max-width:1080px; display:flex; gap:28px; flex-wrap:wrap; align-items:flex-start;">
+
+    <div style="flex:1 1 480px; min-width:320px; background:white; border-radius:28px; padding:20px; box-shadow:0 4px 24px oklch(40% 0.02 60 / 0.08);">
+      <svg viewBox="0 0 560 480" style="width:100%; height:auto; display:block;">
+        <line x1="46.0" y1="24" x2="46.0" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="86.7" y1="24" x2="86.7" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="127.3" y1="24" x2="127.3" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="168.0" y1="24" x2="168.0" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="208.7" y1="24" x2="208.7" y2="440" stroke="#B8AFA3" stroke-width="2"/>
+        <line x1="249.3" y1="24" x2="249.3" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="290.0" y1="24" x2="290.0" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="330.7" y1="24" x2="330.7" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="371.3" y1="24" x2="371.3" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="412.0" y1="24" x2="412.0" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="452.7" y1="24" x2="452.7" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="493.3" y1="24" x2="493.3" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="534.0" y1="24" x2="534.0" y2="440" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="440.0" x2="534" y2="440.0" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="405.3" x2="534" y2="405.3" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="370.7" x2="534" y2="370.7" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="336.0" x2="534" y2="336.0" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="301.3" x2="534" y2="301.3" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="266.7" x2="534" y2="266.7" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="232.0" x2="534" y2="232.0" stroke="#B8AFA3" stroke-width="2"/>
+        <line x1="46" y1="197.3" x2="534" y2="197.3" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="162.7" x2="534" y2="162.7" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="128.0" x2="534" y2="128.0" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="93.3" x2="534" y2="93.3" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="58.7" x2="534" y2="58.7" stroke="#E8E1D6" stroke-width="1"/>
+        <line x1="46" y1="24.0" x2="534" y2="24.0" stroke="#E8E1D6" stroke-width="1"/>
+        <text x="46.0" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">-4</text>
+        <text x="127.3" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">-2</text>
+        <text x="290.0" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">2</text>
+        <text x="371.3" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">4</text>
+        <text x="452.7" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">6</text>
+        <text x="534.0" y="248.0" font-size="13" fill="#9C9184" text-anchor="middle" font-family="Nunito, sans-serif">8</text>
+        <text x="198.7" y="444.0" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">-6</text>
+        <text x="198.7" y="374.7" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">-4</text>
+        <text x="198.7" y="305.3" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">-2</text>
+        <text x="198.7" y="166.7" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">2</text>
+        <text x="198.7" y="97.3" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">4</text>
+        <text x="198.7" y="28.0" font-size="13" fill="#9C9184" text-anchor="end" font-family="Nunito, sans-serif">6</text>
+
+        <path d="M199.1,440.0 L202.1,417.3 L205.1,395.3 L208.2,374.1 L211.2,353.7 L214.2,334.1 L217.3,315.2 L220.3,297.1 L223.3,279.8 L226.3,263.2 L229.4,247.4 L232.4,232.4 L235.4,218.1 L238.5,204.7 L241.5,191.9 L244.5,180.0 L247.6,168.8 L250.6,158.4 L253.6,148.8 L256.7,139.9 L259.7,131.9 L262.7,124.5 L265.8,118.0 L268.8,112.2 L271.8,107.2 L274.8,103.0 L277.9,99.5 L280.9,96.8 L283.9,94.9 L287.0,93.7 L290.0,93.3 L293.0,93.7 L296.1,94.9 L299.1,96.8 L302.1,99.5 L305.2,103.0 L308.2,107.2 L311.2,112.2 L314.2,118.0 L317.3,124.5 L320.3,131.9 L323.3,139.9 L326.4,148.8 L329.4,158.4 L332.4,168.8 L335.5,180.0 L338.5,191.9 L341.5,204.7 L344.6,218.1 L347.6,232.4 L350.6,247.4 L353.7,263.2 L356.7,279.8 L359.7,297.1 L362.7,315.2 L365.8,334.1 L368.8,353.7 L371.8,374.1 L374.9,395.3 L377.9,417.3 L380.9,440.0" stroke="#B0A99C" stroke-width="3" stroke-dasharray="9 8" fill="none" stroke-linecap="round"/>
+
+        <path ref="{{ rightRef }}" d="{{ pathRightD }}" stroke="{{ studentStrokeColor }}" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path ref="{{ leftRef }}" d="{{ pathLeftD }}" stroke="{{ studentStrokeColor }}" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </svg>
+
+      <sc-if value="{{ hasFeedback }}" hint-placeholder-val="{{ false }}">
+        <div style="{{ feedbackBoxStyle }}">
+          <span style="font-size:20px; line-height:1;">{{ feedbackIcon }}</span>
+          <span style="font-size:15px; font-weight:700;">{{ feedbackText }}</span>
+        </div>
+      </sc-if>
+    </div>
+
+    <div style="flex:1 1 320px; min-width:280px; background:white; border-radius:28px; padding:24px; box-shadow:0 4px 24px oklch(40% 0.02 60 / 0.08); display:flex; flex-direction:column; gap:18px;">
+
+      <div>
+        <label style="font-weight:800; font-size:15px; display:block; margin-bottom:8px;">Your function</label>
+        <div style="display:flex; align-items:center; gap:10px; background:white; border:2px solid oklch(90% 0.02 70); border-radius:14px; padding:0 6px 0 16px;">
+          <span style="font-family:'Baloo 2', sans-serif; font-size:18px; font-weight:700; color:oklch(40% 0.02 60);">y =</span>
+          <input type="text" placeholder="-2(x-2)^2 + 4" value="{{ inputText }}" onChange="{{ onInputChange }}" onKeyDown="{{ onKeyDown }}" style="flex:1; min-width:0; font-size:18px; padding:14px 10px; border:none; outline:none; border-radius:14px; font-family:'Nunito',sans-serif; font-weight:700; color:oklch(24% 0.02 60);"/>
+        </div>
+      </div>
+
+      <sc-if value="{{ showParseError }}" hint-placeholder-val="{{ false }}">
+        <div style="font-size:13px; color:oklch(50% 0.1 40); background:oklch(95% 0.04 50); border-radius:10px; padding:10px 12px;">Hmm, I can't quite read that. Try something like <strong>-2(x-2)^2 + 4</strong>.</div>
+      </sc-if>
+
+      <button onClick="{{ onSubmit }}" style="background:oklch(52% 0.09 185); color:white; border:none; border-radius:16px; padding:16px; font-family:'Baloo 2', sans-serif; font-size:18px; font-weight:700; cursor:pointer; box-shadow:0 4px 14px oklch(52% 0.09 185 / 0.35);">
+        Draw my curve
+      </button>
+
+      <a href="Activity2.dc.html" style="text-align:center; font-size:14px; font-weight:700; color:oklch(50% 0.02 60); text-decoration:none; margin-top:-6px;">← Back</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const TARGET_VX = 2;
+const TARGET_VY = 4;
+const TARGET_FN = x => -2*(x-2)*(x-2) + 4;
+const TARGET_OPENS_UP = false;
+const WIDTH_OFFSET = 2;
+const TARGET_WIDTH_DROP = Math.abs(TARGET_VY - TARGET_FN(TARGET_VX + WIDTH_OFFSET));
+
+const CFG = { xMin: -4, xMax: 8, yMin: -6, yMax: 6, left: 46, right: 26, top: 24, bottom: 40, w: 560, h: 480 };
+function toPx(x){ const sx = (CFG.w-CFG.left-CFG.right)/(CFG.xMax-CFG.xMin); return CFG.left + (x-CFG.xMin)*sx; }
+function toPy(y){ const sy = (CFG.h-CFG.top-CFG.bottom)/(CFG.yMax-CFG.yMin); return CFG.top + (CFG.yMax-y)*sy; }
+
+function buildArm(fn, xFrom, xTo, steps){
+  let d = '';
+  let started = false;
+  for(let i=0;i<=steps;i++){
+    const x = xFrom + (xTo-xFrom)*i/steps;
+    let y;
+    try { y = fn(x); } catch(e){ y = NaN; }
+    const inRange = isFinite(y) && y >= CFG.yMin - 0.001 && y <= CFG.yMax + 0.001;
+    if(inRange){
+      d += (started ? 'L' : 'M') + toPx(x).toFixed(2) + ',' + toPy(y).toFixed(2) + ' ';
+      started = true;
+    } else if(started){
+      break;
+    }
+  }
+  return d.trim();
+}
+
+function convertPow(expr){
+  let result = '';
+  let i = 0;
+  while(i < expr.length){
+    if(expr[i] === '^'){
+      let base;
+      if(result.endsWith(')')){
+        let depth = 0, j = result.length-1;
+        for(; j>=0; j--){
+          if(result[j] === ')') depth++;
+          else if(result[j] === '(') { depth--; if(depth===0) break; }
+        }
+        base = result.slice(j);
+        result = result.slice(0, j);
+      } else {
+        let j = result.length-1;
+        while(j>=0 && /[A-Za-z0-9_.]/.test(result[j])) j--;
+        base = result.slice(j+1);
+        result = result.slice(0, j+1);
+      }
+      i++;
+      let expStr = '';
+      if(expr[i] === '-'){ expStr += '-'; i++; }
+      if(expr[i] === '('){
+        let depth=0, start=i;
+        for(; i<expr.length; i++){
+          if(expr[i]==='(') depth++;
+          else if(expr[i]===')'){ depth--; if(depth===0){ i++; break; } }
+        }
+        expStr += expr.slice(start, i);
+      } else {
+        let start=i;
+        while(i<expr.length && /[A-Za-z0-9_.]/.test(expr[i])) i++;
+        expStr += expr.slice(start, i);
+      }
+      result += '__POW__(' + base + ',' + expStr + ')';
+    } else {
+      result += expr[i];
+      i++;
+    }
+  }
+  return result;
+}
+
+function parseFn(text){
+  let s = text.trim();
+  if(s === '') return null;
+  s = s.replace(/^y\s*=\s*/i, '');
+  s = s.replace(/(\d)(x)/gi, '$1*$2');
+  s = s.replace(/(\d|x)(\()/gi, '$1*$2');
+  s = s.replace(/(\))(\d|x|\()/gi, '$1*$2');
+  s = convertPow(s);
+  try {
+    const f = new Function('x', 'const __POW__ = Math.pow; with(Math){ return ' + s + '; }');
+    const test = f(1.234);
+    if(typeof test !== 'number' || isNaN(test)) return null;
+    return f;
+  } catch(e){
+    return null;
+  }
+}
+
+function findExtremum(fn, xMin, xMax, opensUp, steps){
+  let bestX = xMin, bestY = opensUp ? Infinity : -Infinity;
+  for(let i=0;i<=steps;i++){
+    const x = xMin + (xMax-xMin)*i/steps;
+    let y;
+    try { y = fn(x); } catch(e){ continue; }
+    if(!isFinite(y)) continue;
+    if(opensUp ? y < bestY : y > bestY){ bestY = y; bestX = x; }
+  }
+  return { x: bestX, y: bestY };
+}
+
+function detectOpensUp(fn, xCenter){
+  const h = 0.6;
+  try {
+    const y0 = fn(xCenter - h), y1 = fn(xCenter), y2 = fn(xCenter + h);
+    const fpp = (y0 - 2*y1 + y2) / (h*h);
+    return fpp > 0;
+  } catch(e){
+    return null;
+  }
+}
+
+class Component extends DCLogic {
+  state = {
+    inputText: '',
+    pathRightD: '',
+    pathLeftD: '',
+    phase: 'idle',
+    matchState: null,
+    feedback: '',
+    showParseError: false
+  };
+
+  rightRef = React.createRef();
+  leftRef = React.createRef();
+
+  onInputChange = (e) => this.setState({ inputText: e.target.value, showParseError: false });
+  onKeyDown = (e) => { if(e.key === 'Enter') this.onSubmit(); };
+
+  onSubmit = () => {
+    const fn = parseFn(this.state.inputText);
+    if(!fn){
+      this.setState({ showParseError: true });
+      return;
+    }
+    this.setState({ showParseError: false });
+
+    const anchorX = (CFG.xMin + CFG.xMax) / 2;
+    const pathRightD = buildArm(fn, anchorX, CFG.xMax, 100);
+    const pathLeftD = buildArm(fn, anchorX, CFG.xMin, 100);
+
+    this.setState({ pathRightD, pathLeftD, phase: 'drawing', matchState: null, feedback: '' }, () => {
+      [this.rightRef.current, this.leftRef.current].forEach(el => {
+        if(!el) return;
+        const len = el.getTotalLength();
+        el.style.transition = 'none';
+        el.style.strokeDasharray = String(len);
+        el.style.strokeDashoffset = String(len);
+        el.getBoundingClientRect();
+        setTimeout(() => {
+          el.style.transition = 'stroke-dashoffset 1s cubic-bezier(0.4,0,0.2,1)';
+          el.style.strokeDashoffset = '0';
+        }, 20);
+      });
+      clearTimeout(this._diagTimer);
+      this._diagTimer = setTimeout(() => this.revealDiagnosis(fn), 1050);
+    });
+  };
+
+  revealDiagnosis(fn){
+    const opensUp = detectOpensUp(fn, TARGET_VX);
+    let feedback, matchState;
+
+    if(opensUp === null || opensUp !== TARGET_OPENS_UP){
+      matchState = 'mismatch';
+      feedback = "Check the sign — your curve opens the wrong way.";
+    } else {
+      const ext = findExtremum(fn, CFG.xMin, CFG.xMax, TARGET_OPENS_UP, 600);
+      const vxOk = Math.abs(ext.x - TARGET_VX) <= 0.25;
+      const vyOk = Math.abs(ext.y - TARGET_VY) <= 0.35;
+
+      if(!vxOk){
+        matchState = 'mismatch';
+        feedback = "Direction's right, but check the vertex's left-right position.";
+      } else if(!vyOk){
+        matchState = 'mismatch';
+        feedback = "Vertex's left-right position is right, but check its height.";
+      } else {
+        let studentDrop = 0;
+        try {
+          studentDrop = Math.abs(ext.y - fn(ext.x + WIDTH_OFFSET));
+        } catch(e){ studentDrop = 0; }
+
+        if(studentDrop > TARGET_WIDTH_DROP * 1.2){
+          matchState = 'mismatch';
+          feedback = "Vertex is right, but your curve is narrower than the target — check the coefficient in front of the squared term.";
+        } else if(studentDrop < TARGET_WIDTH_DROP * 0.82){
+          matchState = 'mismatch';
+          feedback = "Vertex is right, but your curve is wider than the target — check the coefficient in front of the squared term.";
+        } else {
+          matchState = 'match';
+          feedback = "Nice work — your curve matches the target!";
+        }
+      }
+    }
+
+    this.setState({ phase: 'done', matchState, feedback });
+  }
+
+  renderVals(){
+    const { inputText, pathRightD, pathLeftD, phase, matchState, feedback, showParseError } = this.state;
+    const successColor = 'oklch(58% 0.13 150)';
+    const accentColor = 'oklch(52% 0.09 185)';
+    const studentStrokeColor = matchState === 'match' ? successColor : accentColor;
+
+    const feedbackBoxStyle = `margin-top:14px; display:flex; align-items:center; gap:10px; padding:14px 16px; border-radius:16px; font-family:'Nunito',sans-serif; animation:fadeUp 0.35s ease-out; background:${matchState==='match' ? 'oklch(95% 0.05 150)' : 'oklch(96% 0.03 60)'}; color:${matchState==='match' ? 'oklch(34% 0.09 150)' : 'oklch(38% 0.05 50)'};`;
+
+    return {
+      inputText,
+      pathRightD, pathLeftD,
+      studentStrokeColor,
+      hasFeedback: phase === 'done' && !!feedback,
+      feedbackText: feedback,
+      feedbackIcon: matchState === 'match' ? '✓' : '→',
+      feedbackBoxStyle,
+      showParseError,
+      rightRef: this.rightRef,
+      leftRef: this.leftRef,
+      onInputChange: this.onInputChange,
+      onKeyDown: this.onKeyDown,
+      onSubmit: this.onSubmit
+    };
+  }
+}
+
+</script>
+</body>
+</html>
